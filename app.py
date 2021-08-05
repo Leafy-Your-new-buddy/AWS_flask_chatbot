@@ -268,9 +268,10 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def chat():
-    message = request.args.get('msg')
-    ans = "answer for > "+message
-    return jsonify(answer=ans)
+    chatInput = request.args.get('chatInput')
+    #ans = "answer for > "+message
+    return jsonify(chatBotReply=predict(chatInput))
+    #return jsonify(answer=ans)
 
 if __name__=='__main__':
     #app.run(host='10.200.7.82',debug=True)

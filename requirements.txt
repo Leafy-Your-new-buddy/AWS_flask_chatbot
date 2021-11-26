@@ -1,0 +1,12 @@
+mxnet
+sentencepiece==0.1.91
+transformers==4.8.2
+kobert_transformers==0.4.1
+git+https://git@github.com/SKTBrain/KoBERT.git@master
+git+https://github.com/ssut/py-hanspell.git
+flask==0.12.2
+
+gluonnlp==0.10.0 pandas tqdm
+torch
+'git+https://github.com/SKTBrain/KoBERT.git#egg=kobert_tokenizer&subdirectory=kobert_hf'
+openpyxl
